@@ -58,6 +58,17 @@ cloudops:
       max-tokens: 512
       temperature: 0.2
 
+# ── Springdoc / Swagger UI ──────────────────────────────────────────────────
+springdoc:
+  api-docs:
+    path: /v3/api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+    tags-sorter: alpha
+    operations-sorter: alpha
+    display-request-duration: true
+  show-actuator: false
+
 logging:
   level:
     com.cloudops: INFO
